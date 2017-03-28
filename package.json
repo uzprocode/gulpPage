@@ -1,0 +1,73 @@
+{
+  "name": "gulpDevEnv",
+  "version": "1.0.0",
+  "description": "gulp simple web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.18.0",
+    "babel-plugin-transform-es2015-modules-simple-amd": "^0.2.1",
+    "babel-plugin-transform-es3-member-expression-literals": "^6.5.0",
+    "babel-plugin-transform-es3-property-literals": "^6.5.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babelify": "^7.2.0",
+    "browser-sync": "^2.17.5",
+    "browserify": "^13.1.1",
+    "debowerify": "^1.3.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^6.1.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-change": "^1.0.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-debug": "^2.1.2",
+    "gulp-eslint": "^1.1.1",
+    "gulp-if": "^2.0.1",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-match": "^1.0.0",
+    "gulp-newer": "^1.1.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-prompt": "^0.1.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^2.3.2",
+    "gulp-sequence": "^0.4.6",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.10",
+    "jshint": "^2.8.0",
+    "jshint-stylish": "^2.1.0",
+    "merge": "^1.2.0",
+    "merge-stream": "^1.0.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "require-dir": "^0.3.0",
+    "uglify": "^0.1.5"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "compact": false,
+          "presets": [
+            "es2015"
+          ]
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "jquery": "^1.1.4",
+    "jquery.scrollto": "^2.1.1",
+    "waypoints": "^3.1.1",
+    "velocity-animate": "^1.2.1",
+    "velocity-ui-pack": "^1.2.1"
+  }
+}
